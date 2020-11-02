@@ -1,1 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 
+.header, .footer {
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-logo-wrap {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: black; opacity: 1;
+}
+
+.row {
+    flex-direction: row;
+    width: 350px;
+    height: 50px;
+    align-items: center;
+}
+
+.row, .row-item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row-item {
+    color: white;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.row-item:hover{
+    transition:0;
+    text-decoration-line: underline;   
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.footer-item {
+    color: white;
+    flex-wrap: wrap;
+    font-style: unset;
+}
+
+.aside {
+    background-color: rgb(220,220,220);
+    max-width: 15%;
+    margin-left: 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 100%;
+}
+
+.input, .search{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.p-input {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.p {
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+.input-batton {
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
