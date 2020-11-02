@@ -1,54 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loremipsum</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header-logo-wrap">
             <img src="img/logo.png" alt="Loremipsum">
         </div>
         <div class="row">
-            <div >
-                  <a class="row-item" href="#">Home</a>    
+            <div>
+                <a class="row-item" href="#">Home</a>
             </div>
-             <div >
-                  <a class="row-item" href="#">Contacts</a>    
+            <div>
+                <a class="row-item" href="#">Contacts</a>
             </div>
-              <div >
-                  <a class="row-item" href="#">About</a>    
+            <div>
+                <a class="row-item" href="#">About</a>
             </div>
         </div>
     </header>
     <div class="container">
         <aside class="aside">
             <div class="input">
-                <p class="p-input"> <b>Name</b><br>
+                <p class="p-input-h"> <b>Name</b><br>
                     <input type="text" size="25">
                 </p>
                 <p class="p-input"> <b>Password</b><br>
                     <input type="password" size="25">
                 </p>
-           </div>
-           <div class="search">
+            </div>
+            <div class="search">
                 <p class="p">
                     <input type="text" size="25">
                 </p>
-               <button class ="input-batton" type="submit" name="search" value="1">search</button>
+                <button class="input-button" type="submit" name="search" value="1">search</button>
             </div>
-            <select class="input">
-                <option value="0" selected="selected">Ascending</option>
-                <option value="1">Noascending</option>
-            </select>
-        </aside>
-   </div>
+            <div class="search">
+                <div class="p">
+                    <p class="p-input"> <b>Sort</b><br>
+                        <select class="input">
+                            <option value="0" selected="selected">Ascending</option>
+                            <option value="1">Noascending</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="p">
+                    <p class="p-input"> <b>Filter</b><br>
+                        <p class="filter"><input type="checkbox" name="a" value="1" checked></p>
+                        <p class="filter"><input type="checkbox" name="a" value="2" checked></p>
+                        <p class="filter"><input type="checkbox" name="a" value="3" checked></p>
+                    </p>
+                </div>
+                <div class="p">
+                    <p class="p-input"> <b>Category</b><br>
+                        <p class="filter"><input type="radio" name="a" value="yes" checked></p>
+                        <p class="filter"><input type="radio" name="a" value="no" ></p>
+                        <p class="filter"><input type="radio" name="a" value="may be" ></p>
+                    </p>
+                </div>
+                <div class="p">
+                    <div class="slidecontainer">
+                        <p class="p-input"> <b>Price</b><br>
+                            <input type="range" min="1" max="100" value="50">
+                        </p>
+                    </div>           
+                </div>
+                <div class="p">
+                    <p class="p-input-f"> <b>Date</b><br>
+                        <input type="date">
+                        <br>
+                    </p>
+                </div>
+             </div>
+       </aside>
+       <section>
+         <div class="pic">
+           <div class="card">
+            <img src="img/product.png" alt="Loremipsum">
+           </div>
+       </div>    
+       </section>
+    </div>
     <footer class="footer">
-        <div >
+        <div>
             <i class="footer-item"> &#169 MySite.com. All rights reserved.</i>
         </div>
     </footer>
 </body>
+
 </html>

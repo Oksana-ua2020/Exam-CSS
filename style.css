@@ -41,13 +41,13 @@ body {
 
 .row-item:hover{
     transition:0;
-    text-decoration-line: underline;   
+    text-decoration: underline;   
 }
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-item {
@@ -58,7 +58,7 @@ body {
 
 .aside {
     background-color: rgb(220,220,220);
-    max-width: 15%;
+    max-width: 12%;
     margin-left: 20px;
     margin-top: 50px;
     display: flex;
@@ -68,6 +68,8 @@ body {
 
 .container {
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .input, .search{
@@ -89,8 +91,80 @@ body {
     margin: 0;
     margin-top: 50px;
 }
-.input-batton {
+
+.input-button {
     width: 60px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.filter {
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.p-input-h {
+    margin-top: 20px;
+    text-align: center;   
+}
+
+.p-input-f {
+    margin-bottom: 20px;
+    text-align: center;   
+}
+
+.pic {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.pic-in {
+    justify-content: center
 }
