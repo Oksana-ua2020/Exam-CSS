@@ -1,4 +1,4 @@
-body {
+body, .pic-p, .pic-txt   {
     margin: 0;
     padding: 0;
 }
@@ -54,13 +54,15 @@ body {
     color: white;
     flex-wrap: wrap;
     font-style: unset;
+    align-items: flex-end;
 }
 
 .aside {
     background-color: rgb(220,220,220);
-    max-width: 12%;
+    max-width: 200px;
     margin-left: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -78,6 +80,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
 }
 
 .p-input {
@@ -152,19 +155,79 @@ body {
 }
 
 .pic {
-    position: relative;
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 250px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+.pic-img {
+    color: white;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    /* border: 1px solid black; */
+}
+.pic-item {
+    width: 100%;
+    height: 50%;
 }
 
-.card {
-    position: relative;
+.pic-p {
+    color: dimgrey;
+}
+
+.pic-txt {
+    margin-top: 10px;
+    color: black;
+    text-align: center;
+}
+
+.pic-button {
+    width: 60px;
+    height: 30px;
+    appearance: none;
+    outline: none;
+    border-radius: 7px;
+    color: black;
+    background-color: white;
+    font-size: 14px;
+    margin: 16px;
+    }
+
+.pic-item-button {
     display: flex;
+    width: 80%;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: gray;
 }
 
-.pic-in {
-    justify-content: center
+.pic-button:hover {
+    background-color: green;
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 30px;
+    margin-left: 150px;
+    width: 100%;
+
+}
+.pic-sect {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 200px;
+    height: 250px;
+    margin: 20px 20px;
+
 }
