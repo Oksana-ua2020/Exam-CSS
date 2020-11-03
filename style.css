@@ -1,4 +1,5 @@
 body, .pic-p, .pic-txt   {
+    height: auto;
     margin: 0;
     padding: 0;
 }
@@ -12,6 +13,13 @@ body, .pic-p, .pic-txt   {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    flex-shrink: 0;
+    overflow: auto;
 }
 
 .header-logo-wrap {
@@ -44,12 +52,6 @@ body, .pic-p, .pic-txt   {
     text-decoration: underline;   
 }
 
-.footer {
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
-
 .footer-item {
     color: white;
     flex-wrap: wrap;
@@ -70,6 +72,7 @@ body, .pic-p, .pic-txt   {
 
 .container {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
 }
@@ -161,6 +164,8 @@ body, .pic-p, .pic-txt   {
     height: 250px;
     font-size: 16px;
     border: 1px solid black;
+    margin: 20px 20px;
+
 }
 .pic-img {
     color: white;
@@ -212,11 +217,12 @@ body, .pic-p, .pic-txt   {
 
 .content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    margin-top: 30px;
-    margin-left: 150px;
-    width: 100%;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px
 
 }
 .pic-sect {
@@ -229,5 +235,4 @@ body, .pic-p, .pic-txt   {
     width: 200px;
     height: 250px;
     margin: 20px 20px;
-
 }
