@@ -19,7 +19,6 @@ body, .pic-p, .pic-txt   {
     position: fixed;
     bottom: 0;
     flex-shrink: 0;
-    overflow: auto;
 }
 
 .header-logo-wrap {
@@ -65,19 +64,16 @@ body, .pic-p, .pic-txt   {
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
+    height: 750px;
 }
 
 .container {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.input, .search{
+.search{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -92,7 +88,7 @@ body, .pic-p, .pic-txt   {
     text-align: center;
 }
 
-.p {
+.p-aside {
     padding: 0;
     margin: 0;
     margin-top: 50px;
@@ -218,13 +214,18 @@ body, .pic-p, .pic-txt   {
 .content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: center;
+    align-content: center;
     margin-top: 50px;
     margin-left: 200px;
-    margin-right: 200px
-
+    margin-right: 200px;   
 }
+
+.sect-main {
+    height: calc(100vh - 100px) ;
+    overflow: auto;
+}
+
 .pic-sect {
     display: flex;
     align-items: center;

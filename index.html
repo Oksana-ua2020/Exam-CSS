@@ -13,7 +13,7 @@
         <div class="header-logo-wrap">
             <img src="img/logo.png" alt="Loremipsum">
         </div>
-        <div class="row">
+        <nav class="row">
             <div>
                 <a class="row-item" href="#">Home</a>
             </div>
@@ -23,89 +23,91 @@
             <div>
                 <a class="row-item" href="#">About</a>
             </div>
-        </div>
+        </nav>
     </header>
-    <div class="container">
-        <aside class="aside">
-            <div class="input">
-                <p class="p-input-h"> <b>Name</b><br>
-                    <input type="text" size="20">
-                </p>
-                <p class="p-input"> <b>Password</b><br>
-                    <input type="password" size="20">
-                </p>
-            </div>
-            <div class="search">
-                <p class="p">
-                    <input type="text" size="20">
-                </p>
-                <button class="input-button" type="submit" name="search" value="1">search</button>
-            </div>
-            <div class="search">
-                <div class="p">
-                    <p class="p-input"> <b>Sort</b><br>
-                        <select class="input">
-                            <option value="0" selected="selected">Ascending</option>
-                            <option value="1">Noascending</option>
-                        </select>
-                    </p>
-                </div>
-                <div class="p">
-                    <p class="p-input"> <b>Filter</b><br>
-                        <p class="filter"><input type="checkbox" name="a" value="1" checked></p>
-                        <p class="filter"><input type="checkbox" name="a" value="2" checked></p>
-                        <p class="filter"><input type="checkbox" name="a" value="3" checked></p>
-                    </p>
-                </div>
-                <div class="p">
-                    <p class="p-input"> <b>Category</b><br>
-                        <p class="filter"><input type="radio" name="a" value="yes" checked></p>
-                        <p class="filter"><input type="radio" name="a" value="no" ></p>
-                        <p class="filter"><input type="radio" name="a" value="may be" ></p>
-                    </p>
-                </div>
-                <div class="p">
-                    <div class="slidecontainer">
-                        <p class="p-input"> <b>Price</b><br>
-                            <input type="range" min="1" max="100" value="50">
+    <main>
+        <form class="sect-main">
+            <div class="container">
+                <aside class="aside">
+                    <div class="search">
+                        <p class="p-input-h"> <b>Name</b><br>
+                            <input type="text" size="20">
                         </p>
-                    </div>           
-                </div>
-                <div class="p">
-                    <p class="p-input-f"> <b>Date</b><br>
-                        <input type="date">
-                        <br>
-                    </p>
-                </div>
-             </div>
-       </aside>
-       <section class="content">
-           <div class="pic">
-               <div class="pic-img">
-                   <img src="img/prod.jpg" alt="product" class="pic-item">
-                        <p class="pic-p">Product</p>
-                    <div class="pic-txt">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aperiam?
+                        <p class="p-input"> <b>Password</b><br>
+                            <input type="password" size="20">
+                        </p>
                     </div>
-                    <div class="pic-item-button">
-                        <p class="pic-item-button">999$</p>
-                        <button class="pic-button" type="submit" name="buy" value="1">Buy</button>
+                    <div class="search">
+                        <p class="p-aside">
+                            <input type="search" size="20">
+                        </p>
+                        <button class="input-button" type="submit" name="search" value="1">search</button>
                     </div>
-                </div>
+                        <div class="p-aside">
+                            <p class="p-input"> <b>Sort</b><br>
+                                <select class="input">
+                                    <option value="0" selected>Ascending</option>
+                                    <option value="1">Noascending</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="p-aside">
+                            <p class="p-input"> <b>Filter</b><br>
+                            <p class="filter"><input type="checkbox" name="cb1" value="1" checked></p>
+                            <p class="filter"><input type="checkbox" name="cb2" value="2" checked></p>
+                            <p class="filter"><input type="checkbox" name="cb3" value="3" checked></p>
+                            </p>
+                        </div>
+                        <div class="p-aside">
+                            <p class="p-input"> <b>Category</b><br>
+                            <p class="filter"><input type="radio" name="rf_yes" value="4" checked></p>
+                            <p class="filter"><input type="radio" name="rf_no" value="5"></p>
+                            <p class="filter"><input type="radio" name="rf_may_be" value="6"></p>
+                            </p>
+                        </div>
+                        <div class="p-aside">
+                            <div class="slidecontainer">
+                                <p class="p-input"> <b>Price</b><br>
+                                    <input type="range" min="1" max="100" value="50">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-aside">
+                            <p class="p-input-f"> <b>Date</b><br>
+                                <input type="date">
+                                <br>
+                            </p>
+                        </div>
+                </aside>
+                <section class="content">
+                    <div class="pic">
+                        <div class="pic-img">
+                            <img src="img/prod.jpg" alt="product" class="pic-item">
+                            <p class="pic-p">Product</p>
+                            <div class="pic-txt">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aperiam?
+                            </div>
+                            <div class="pic-item-button">
+                                <p class="pic-item-button">999$</p>
+                                <button class="pic-button" type="submit" name="buy" value="1">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-sect"></div>
+                    <div class="pic-sect"></div>
+                    <div class="pic-sect"></div>
+                    <div class="pic-sect"></div>
+                    <div class="pic-sect"></div>
+                    <div class="pic-sect"></div>
+                    <div class="pic-sect"></div>
+                    <div class="pic-sect"></div>
+                    <div class="pic-sect"></div>
+                </section>
             </div>
-                <div class="pic-sect"></div>
-                <div class="pic-sect"></div>
-                <div class="pic-sect"></div>
-                <div class="pic-sect"></div>
-                <div class="pic-sect"></div>
-                <div class="pic-sect"></div>
-                <div class="pic-sect"></div>
-                <div class="pic-sect"></div>
-                <div class="pic-sect"></div>
-     </section>
-    </div>
+        </form>
+    </main>
     <footer class="footer">
-        <div >
+        <div>
             <i class="footer-item"> &#169 MySite.com. All rights reserved.</i>
         </div>
     </footer>
